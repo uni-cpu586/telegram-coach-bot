@@ -1,0 +1,16 @@
+{
+  "name": "telegram-coach-bot",
+  "version": "1.0.0",
+  "description": "心理教練 Telegram Bot，支援 Gemini AI",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_OPTIONS=--dns-result-order=ipv4first node src/index.js",
+    "dev": "NODE_OPTIONS=--dns-result-order=ipv4first node --watch src/index.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.4.5"
+  }
+}
