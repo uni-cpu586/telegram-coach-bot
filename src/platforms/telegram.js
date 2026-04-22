@@ -27,6 +27,7 @@ export function createTelegramBot(token) {
   });
 
   bot.on('text', async (ctx) => {
+    console.log('收到訊息:', ctx.from.id, ctx.message.text);
     const history = getSession(ctx.from.id);
     const userMessage = ctx.message.text;
     await ctx.sendChatAction('typing');

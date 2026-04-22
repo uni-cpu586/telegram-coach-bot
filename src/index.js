@@ -1,4 +1,6 @@
 import 'dotenv/config';
+import { setDefaultAutoSelectFamily } from 'net';
+setDefaultAutoSelectFamily(false);
 import { createTelegramBot } from './platforms/telegram.js';
 
 const { TELEGRAM_BOT_TOKEN } = process.env;

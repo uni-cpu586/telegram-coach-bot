@@ -25,7 +25,7 @@ function fetchImageAsBase64(url) {
 
 export async function getCoachReply(userMessage, conversationHistory = []) {
   const model = genAI.getGenerativeModel({
-    model: 'gemini-1.5-flash',
+    model: 'gemini-2.0-flash',
     systemInstruction: SYSTEM_PROMPT,
   });
 
@@ -41,7 +41,7 @@ export async function getCoachReply(userMessage, conversationHistory = []) {
 
 export async function getCoachReplyWithImage(imageUrl, caption, conversationHistory = []) {
   const model = genAI.getGenerativeModel({
-    model: 'gemini-1.5-flash',
+    model: 'gemini-2.0-flash',
     systemInstruction: SYSTEM_PROMPT,
   });
 
